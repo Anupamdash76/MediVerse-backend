@@ -1,0 +1,23 @@
+# =====================================================
+# Backend Models
+# =====================================================
+backend/models/*
+!backend/models/.gitkeep
+!backend/models/feature_names.pkl
+!backend/models/label_encoder.pkl
+!backend/models/symptom_embeddings.pt
+!backend/models/xgboost.json
+
+# Explicitly ignore large models
+backend/models/random_forest.pkl
+backend/models/features.pkl
+backend/models/symptom_list.pkl
+backend/models/xgb_model.pkl
+backend/models/xgboost.pkl
+
+# =====================================================
+# Backend Artifacts
+# =====================================================
+backend/artifacts/*
+!backend/artifacts/feature_names.pkl
+!backend/artifacts/label_encoder.pkl

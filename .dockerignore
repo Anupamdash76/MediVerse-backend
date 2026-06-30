@@ -1,0 +1,37 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+backend/deploy_env/
+
+# Environment
+.env
+
+# Research
+research/
+
+# Build
+build/
+dist/
+
+# Large ML files (exclude all by default)
+backend/models/*.pkl
+backend/models/*.joblib
+backend/models/*.pt
+backend/models/*.onnx
+backend/models/*.h5
+
+# Keep only the files required for inference
+!backend/models/xgboost.json
+!backend/models/symptom_embeddings.pt
+!backend/models/feature_names.pkl
+!backend/models/label_encoder.pkl
